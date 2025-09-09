@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+:root {
+  --accent: #a64264;
+  --soft-pink: #ffd3e0;
+}
+
+.news-top {
+  position: relative;
+  min-height: 370px;
+  background: url("../img/nw-bg.jpg") center/cover no-repeat;
+  width: 100vw;
+  margin-top: -130px;
+  padding-top: 130px;
+}
+
+.news-top-overlay {
+  position: absolute;
+  inset: 130px 0 0 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.news__ttl {
+  transform: translateY(20px);
+}
+
+.news__ttl h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--accent);
+}
+
+/* news */
+.news {
+  background: #fff;
+}
+
+.news__inner {
+  width: 1200px;
+  margin-inline: auto;
+  padding: 0 16px;
+}
+.news__sttl {
+  font-weight: bold;
+  font-size: 32px;
+  color: var(--accent);
+  margin: 80px;
+}
+
+.news__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news__item {
+  display: grid;
+  grid-template-columns: 160px 120px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 2px dotted var(--soft-pink);
+}
+.news__item:first-child {
+  padding-block-start: 0;
+}
+
+.news__date {
+  white-space: nowrap;
+}
+
+.news__badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #ffe500;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.news__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.news__link:hover,
+.news__link:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+
+.news__new {
+  color: #ff0004;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.news__pager {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+.news__page {
+  inline-size: 44px;
+  block-size: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--soft-pink);
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.news__page:hover,
+.news__page:focus-visible {
+  background: #ffe9f0;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+.news__page.is-current {
+  background: var(--soft-pink);
+}

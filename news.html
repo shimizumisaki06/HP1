@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HP①</title>
+    <meta name="description" content="WithCodeのHP①の課題です。" />
+    <meta name="keywords" content="IT,プログラミング,フリーランス,副業" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="本番環境URL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WithCode -HP①-" />
+    <meta property="og:description" content="WithCodeのHP①の課題です。" />
+    <meta property="og:site_name" content="HP①" />
+    <meta property="og:image" content="本番環境URL/img/logo.png" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- CSS-内部 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/news.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="header-wrap">
+        <div class="header-wrap__logo">
+          <a href="/"><img src="img/logo.png" alt="ロゴ" /></a>
+        </div>
+        <nav class="header-wrap__nav">
+          <ul class="header-wrap__nav__list">
+            <li class="header-wrap__nav__list__item">
+              <a href="/about.html">当院について</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="/services1.html">診療案内</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="/staff.html">スタッフ紹介</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="/access.html">アクセス・診療時間</a>
+            </li>
+            <li class="header-wrap__nav__list__item">
+              <a href="/news.html">お知らせ</a>
+            </li>
+            <li class="header-wrap__nav__list__item__contact">
+              <a href="access.html">予約</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- top -->
+      <section class="news-top">
+        <div class="news-top-overlay">
+          <div class="news__ttl">
+            <h1>お知らせ</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- news -->
+      <section id="news" class="news" aria-labelledby="news-title">
+        <div class="news__inner">
+          <h2 id="news-title" class="news__sttl">お知らせ</h2>
+
+          <ul class="news__list">
+            <li class="news__item">
+              <time class="news__date" datetime="2025-01-15">2025.01.15</time>
+              <span class="news__badge is-important">重要</span>
+              <a class="news__link" href="#">マイナ保険証について</a>
+              <span class="news__new">new</span>
+            </li>
+
+            <li class="news__item">
+              <time class="news__date" datetime="2025-01-01">2025.01.01</time>
+              <span class="news__badge is-blog">ブログ</span>
+              <a class="news__link" href="#">新年のご挨拶</a>
+              <span class="news__new">new</span>
+            </li>
+
+            <li class="news__item">
+              <time class="news__date" datetime="2025-01-01">2025.01.01</time>
+              <span class="news__badge is-important">重要</span>
+              <a class="news__link" href="#">年始年始の営業時間につきまして</a>
+            </li>
+
+            <li class="news__item">
+              <time class="news__date" datetime="2025-01-01">2025.01.01</time>
+              <span class="news__badge is-important">重要</span>
+              <a class="news__link" href="#">マイナ保険証について</a>
+            </li>
+
+            <li class="news__item">
+              <time class="news__date" datetime="2025-01-01">2025.01.01</time>
+              <span class="news__badge is-important">重要</span>
+              <a class="news__link" href="#">マイナ保険証について</a>
+            </li>
+          </ul>
+
+          <nav class="news__pager" aria-label="ニュースのページ">
+            <a class="news__page is-current" href="#">1</a>
+            <a class="news__page" href="#">2</a>
+            <a class="news__page" href="#">3</a>
+            <a class="news__page" href="#">4</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+
+    <footer class="footer" id="footer">
+      <div class="footer-wrap">
+        <div class="footer-wrap__left">
+          <div class="footer-wrap__left__logo">
+            <a href="/">
+              <img src="img/logo.png" alt="ロゴ" />
+            </a>
+          </div>
+          <div class="footer-wrap__left__add">
+            <p>〒000-0000 東京都豊島区南池袋１丁目</p>
+          </div>
+          <h3 class="footer-lead">ご予約はお電話から</h3>
+          <div class="footer-wrap__left__tel">
+            <a
+              href="tel:0000000000"
+              class="footer-tel"
+              aria-label="電話 000-000-000"
+            >
+              <i class="fa-solid fa-phone"></i>
+              000-000-000
+            </a>
+          </div>
+          <div class="footer-wrap__left__cal">
+            <table>
+              <tr>
+                <th>診療時間</th>
+                <td>月</td>
+                <td>火</td>
+                <td>水</td>
+                <td>木</td>
+                <td>金</td>
+                <td>土</td>
+                <td>日</td>
+              </tr>
+              <tr>
+                <th>10:00-12:00</th>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>-</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th>15:00-19:00</th>
+                <td>〇</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>-</td>
+                <td>〇</td>
+                <td>〇</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="footer-wrap__right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6477.917426567948!2d139.70594146601763!3d35.727233899589244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d42a3c90771%3A0x75695050febf24d9!2z44CSMTcxLTAwMjIg5p2x5Lqs6YO96LGK5bO25Yy65Y2X5rGg6KKL77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1757053654611!5m2!1sja!2sjp"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-copy"><p>© M.Shimizu</p></div>
+  </body>
+</html>
