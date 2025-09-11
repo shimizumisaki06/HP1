@@ -50,7 +50,7 @@
   display: grid;
   grid-template-columns: 280px 9rem 1fr;
   align-items: center;
-  min-height: 100px;
+  min-height: 80px;
   background: #fff;
   color: #000;
   text-decoration: none;
@@ -65,23 +65,23 @@
 
 .notice__label {
   background:  #ffe500;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
-  font-weight: 700;
+  font-weight: bold;
 }
 .notice__icon {
   font-weight: 900;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1;
   display: inline-flex;
   width: 1em;
   justify-content: center;
 }
 .notice__labelText {
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 0.04em;
 }
 
@@ -151,13 +151,13 @@
 }
 
 .services__grid {
-  width: 1200px;
+  width: 1120px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 80px;
   row-gap: 40px;
-  align-items: stretch;
+  align-items: center;
 }
 
 .ser-card {

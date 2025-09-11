@@ -59,7 +59,7 @@
 
 .news__item {
   display: grid;
-  grid-template-columns: 160px 120px 1fr auto;
+  grid-template-columns: 160px 80px 1fr auto;
   align-items: center;
   gap: 24px;
   padding: 20px 0;
@@ -75,7 +75,7 @@
 
 .news__badge {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 4px 12px;
   background: #ffe500;
   font-weight: bold;
   text-align: center;

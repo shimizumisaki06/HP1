@@ -124,6 +124,7 @@
 }
 
 .way {
+  position: relative;
   min-height: 210px;
   display: flex;
   flex-direction: column;
@@ -136,13 +137,22 @@
 }
 
 .way__ttl {
+  position: relative;
   margin: 0 0 10px;
   font-weight: bold;
   font-size: 20px;
-  display: inline-block;
   padding-bottom: 6px;
-  border-bottom: 3px solid var(--accent);
   line-height: 1.2;
+}
+
+.way__ttl::after{
+  content: "";
+  position: absolute;
+  left: -28px;   /* ← .way の左右 padding と同じ値 */
+  right: -28px;  /* 端から端まで */
+  bottom: 0;
+  height: 3px;
+  background: var(--accent);
 }
 
 .way p {

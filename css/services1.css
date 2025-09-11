@@ -49,8 +49,8 @@
   padding: 0;
   margin: 80px 0;
   display: grid;
-  grid-template-columns: repeat(2, 460px);
-  gap: 140px;
+  grid-template-columns: repeat(2, 400px);
+  gap: 160px;
   justify-content: center;
 }
 
@@ -62,7 +62,7 @@
   display: grid;
   place-items: center;
   width: 100%;
-  height: 112px;
+  height: 80px;
   background: var(--accent);
   color: #fff;
   text-decoration: none;
@@ -123,15 +123,20 @@
   box-sizing: border-box;
 }
 
+.symptoms__inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .symptoms__grid {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: grid;
+  grid-template-columns: repeat(3, 320px);
   column-gap: 56px;
   row-gap: 56px;
-  justify-content: start;
-  margin-inline: 160px;
+justify-content: center;
 }
 
 .symptoms__card {
@@ -219,7 +224,7 @@
   place-items: center;
   color: #000;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 24px;
   letter-spacing: 0.02em;
   text-align: center;
 }
