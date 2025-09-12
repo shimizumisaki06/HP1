@@ -116,7 +116,7 @@
 
 .access__ways {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   justify-content: space-between;
   align-items: stretch;
@@ -143,16 +143,10 @@
   font-size: 20px;
   padding-bottom: 6px;
   line-height: 1.2;
-}
-
-.way__ttl::after{
-  content: "";
-  position: absolute;
-  left: -28px;   /* ← .way の左右 padding と同じ値 */
-  right: -28px;  /* 端から端まで */
-  bottom: 0;
-  height: 3px;
-  background: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.35em;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--accent);
 }
 
 .way p {
